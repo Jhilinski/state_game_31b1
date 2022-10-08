@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
+//import 'dart:math';
 
 class PageOne extends StatefulWidget {
   const PageOne({Key? key}) : super(key: key);
@@ -63,15 +63,19 @@ class _PageOneState extends State<PageOne> {
       'Wisconsin',
       'Wyoming'
     ];
-    String stateName;
-    var rng = Random();
-
-    stateName = ourStates[rng.nextInt(ourStates.length)];
-    var answer = stateName;
+    //String stateName;
+    //var rng = Random();
     ourStates.shuffle();
+    String stateName = ourStates[0];
+    var answer = stateName;
+    String button2 = ourStates[1];
+    String button3 = ourStates[2];
+    //stateName = ourStates[rng.nextInt(ourStates.length)];
+    //var answer = stateName;
+    //ourStates.shuffle();
 
-    String button2 = ourStates[rng.nextInt(ourStates.length)];
-    String button3 = ourStates[rng.nextInt(ourStates.length)];
+    //String button2 = ourStates[rng.nextInt(ourStates.length)];
+    //String button3 = ourStates[rng.nextInt(ourStates.length)];
     List newButtons = [answer, button2, button3];
     List newButtonsSC = newButtons.toList();
 
