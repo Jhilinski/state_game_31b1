@@ -1,5 +1,3 @@
-//import '/views/page_one.dart';
-
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -62,8 +60,6 @@ class _StartPageState extends State<StartPage> {
                       _myBox.put(1, playerName);
                     });
                     savedName = (_myBox.get(1));
-
-                    //debugPrint(playerName);
                   },
                   child: const Text('Enter Player Name'),
                 ),
